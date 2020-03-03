@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Calibry;  
+}
+
+header{
+    background-image: url(../russel2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}  
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    border: 1px solid black;
+}
+
+ul li a:hover{
+    background-color: black;
+    color: white;
+}
+
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+    margin-left: 30px;
+}
+
+.title{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1{
+    color: #3B3A37;
+    font-size: 110px;
+}
+
+.timer{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 110px;
+    color: #3B3A37;
+}
+
+.count span{
+    display: inline-block;
+    border: 5px solid;
+}
