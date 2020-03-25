@@ -10,19 +10,12 @@
         <header>
             <form name="dynamicForm">
                 <script src="dynamic.js"></script>
-                Imie: <input type="text">
+                Liczba:<input type="number" name="srednia_arytmetyczna">
                 <input type="button" onclick="add(this);" value="Dodaj pole"/>
                 <br /><br />
-                Nazwisko: <input type="text">
-                <input type="button" onclick="add(this);" value="Dodaj pole"/>
-                <br>
-                Wiek: <input type="text">
-                <input type="button" onclick="add(this);" value="Dodaj pole"/>
-                <br /><br />
-                Telefon: <input type="text">
-                <input type="button" onclick="add(this);" value="Dodaj pole"/>
-                <br /><br />
-                <input type="submit" value="submit"/>
+                <input type="submit" onclick="return srednia();" value="oblicz średnią arytmetyczną"/>
+                <br><br>
+                Wynik:<input type="number" id="wynik">
             </form> 
         </header>
     </body>
