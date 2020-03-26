@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Model epidemiologiczny SIR</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    </head>
+    <body>
+        <script src="sir.js"></script>
+        <h1>S(t) - liczba osób zdrowych</h1>
+        <h1>I(t) - liczba osób zakażonych</h1>
+        <h1>R(t) - liczba osób zdrowiejących, którzy nabyli odporność</h1>
+        <h1>Beta - wspólczynnik zachorowalności</h1>
+        <h1>Gamma - średni wspólczynnik wyzdrowień</h1>
+        N(Populacja):<input type="number" id="n">
+        <br><br>
+        Liczba dni:<input type="number" id="d">
+        <br><br>
+        Osoby zarażone:<input type="number" id="i">
+        <br><br>
+        Osoby, które wyzdrowiały:<input type="number" id="r">
+        <br><br>
+        Beta:<input type="numbe" id="beta">
+        <br><br>
+        Gamma:<input type="number" id="gamma">
+        <br><br>
+        <button onclick="return gowno_pierdolone()">Wcisnij</button>
+        <canvas class="tlo" id="canvasik"></canvas>
+        <script src="sir.js"></script>
+    </body>
+
+</html>
