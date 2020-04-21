@@ -1,7 +1,18 @@
 .siblings *{
     display: block;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     color: black;
     padding: 5px;
     margin: 15px;
 }
+.dane *{
+    display: inline-block;
+    width: 1300px;
+}
+
+.dane_malzonka{
+    width: 10px;
+    height: 10px;
+    /* border: 2px solid black; */
+    position: relative;
+} 

@@ -4,8 +4,87 @@
         <meta charset="utf-8">
         <title>Formularz Pit</title>
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="scripts.js"></script>
     </head>
     <body>
-        
+        <h1>Formularz PIT</h1>
+        <div class="siblings">
+            <h3 id="nip">1.Indentyfikator podatkowy NIP / numer PESEL podatnika<input type="number"></h3>
+            <button id="b1">Dane małzonka(opcjonalnie)</button>
+            <h3 id="nip_malzonka">2.Indentyfikator podatkowy NIP / numer PESEL malzonka<input type="number"></h3>
+            <h3 id="nr_dokumentu">3.Nr dokumentu <input type="number"></h3>
+            <h3>4.Status <input type="text"></h3>
+            <h3>5.Rok <input type="number"></h3>
+            <h3>6.Wybór sposobu opodatkowania </h3>
+            <select>
+                <option value="1">Indywidualnie</option>
+                <option value="2">Wspólnie z małżonkiem</option>
+                <option value="3">W sposób przewidziany dla wdów i wdowców</option>
+                <option value="4">W sposób przewidziany dla osób samotnie wychowujących dzieci</option>
+            </select>
+            <select>
+                <option value="7">7.W sposób przewidziany w art. 29 ust.4 ustawy - podatnik</option>
+                <option value="8">8.W sposób przewidziany w art. 29 ust.4 ustawy - małzonek</option>
+            </select>
+            <h1>A.MIEJSCE I CEL SKŁADANIA ZEZNANIA</h1>
+            <h3>9.Urząd do którego jest adresowane zeznanie <input type="text"></h3>
+            <h3>10.Cel złozenia formularza</h3>
+            <select class="korekta">
+                <option value="zlozenie">Złozenie zeznania</option>
+                <option value="korekta">Korekta zeznania</option>
+            </select>
+            <h3 id="rodzaj">11.Rodzaj korekty</h3>
+            <select id="rodzaj1">
+                <option value="mowa">Korekta zeznania, o której mowa w art. 81 Ordynacji podatkowej</option>
+                <option value="skladana">Korekta zeznania składana w toku postępowania
+                                         podatkowego w sprawie unikania opodatkowania,
+                                         o której mowa w art. 81b 1a Ordynacji podatkowej"
+                </option>
+            </select>
+            <h1>DANE IDENTYFIKACYJNE I AKTUALNY ADRES ZAMIESZKANIA</h1>
+            <h2>B.1 DANE PODATNIKA</h2>
+            <button id="b2">Zweryfikuj</button>
+        </div>
+        <div id="dane">
+            12.Nazwisko: <input type="text" id="nazwisko">
+            13.Pierwsze imię: <input type="text" id="imie">
+            14.Data urodzenia: <input type="text" id="ur">
+            <br><br><br>
+            15.Kraj: <input type="text" id="kraj">
+            16.Województwo: <input type="text" id="woj">
+            17.Powiat: <input type="text" id="pow">
+            <br><br><br>
+            18.Gmina: <input type="text" id="gmin">
+            19:Ulica: <input type="text" id="ul">
+            20.Nr Domu: <input type="text" id="nrd">
+            21.Nr lokalu: <input type="text" id="nrl">
+            <br><br><br>
+            22.Miejscowosc: <input type="text" id="miej">
+            23.Kod pocztowy: <input type="text" id="kod">
+            <br><br><br>
+            <button id="b3">Dane małzonka(opcjonalnie)</button>
+            <br><br><br>
+        </div>
+        <div class="dane_malzonka">
+            <h2>B.2 DANE MAŁŻONKA</h2>
+            12.Nazwisko: <input type="text" id="nazwisko1">
+            13.Pierwsze imię: <input type="text" id="imie1">
+            14.Data urodzenia: <input type="text">
+            <br><br><br>
+            15.Kraj: <input type="text" id="kraj1">
+            16.Województwo: <input type="text" id="woj1">
+            17.Powiat: <input type="text" id="pow1">
+            <br><br><br>
+            18.Gmina: <input type="text" id="gmin1">
+            19:Ulica: <input type="text" id="ul1">
+            20.Nr Domu: <input type="text" id="nrd1">
+            21.Nr lokalu: <input type="text" id="nrl1">
+            <br><br><br>
+            22.Miejscowosc: <input type="text" id="miej1">
+            23.Kod pocztowy: <input type="text" id="kod1">
+            <br><br><br>
+            <button id="b4">Wypełnij automatycznie</button>
+        </div>
     </body>
 </html>
